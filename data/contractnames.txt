@@ -1,0 +1,14 @@
+Contract Name	Contract Name Count
+Requirements Workshop and Architecture Design	21
+Web report and Content Intelligence implementation	34
+Proposal for Customer Migration	17
+Implementation SOW	56
+Multi-Family Pilot	42
+Assistance Expertise	12
+Performance and Architecture Assessment	57
+Roadmap Study Project	72
+Solutions Proposal	94
+Upgrade SOW	89
+SOW for Migration Utility	65
+Phase II Migration	100
+Assistance Architecture	123

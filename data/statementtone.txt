@@ -1,0 +1,31 @@
+Rank	Statement	Tone
+1	Please note that durations are approximate and do not fully account for team tasks.	Negative
+2	The upgrade or downgrade to different versions is not included in the proposed costs.	Negative
+3	No approval of assets will be provided.	Negative
+4	It does not affect any licensing or pricing and is not broken down by the number of versions.	Negative
+5	With any customization it would be appropriate to use this as guidance and OpenText Professional Services can provide better estimates following analysis of requirements and design of the solution.	Negative
+6	OpenText has interpreted this question as if we as a company have a Disaster Recovery Plan.	Negative
+7	Customer will be responsible for all backup and restoration processes to be performed on systems within their environment.	Negative
+8	Failure to comply with the request of the Contracting Authority and meet the requirement within that time period will render the bid non-responsive.	Negative
+9	Duration noted below should not be interpreted as work effort.	Negative
+10	The process to move and migrate to a more digital based marketing / communications team (across several business units) is challenging to say the least	Negative
+1	A flexible object model that can be used to describe a wide range of physical item types. 	Neutral
+2	Close alignment to the functionality of the OpenText Records Management module for Content Server. 	Neutral
+3	Please note that associated services estimates are based upon OT Services delivery of projects similar in nature. 	Neutral
+4	In consideration for the High Level Objectives above, Customer will engage OT in an estimated 223 person-day Project. 	Neutral
+5	Final deliverables will be prepared in French.	Neutral
+6	This consultant will be guiding the Customer team on effective communications to affect the transition from the legacy solution to the new solution.	Neutral
+7	We suggest you let these instructions viewable until you are ready to revise your final version.	Neutral
+8	Update these sections as required to be specific to the SOW contemplated.	Neutral
+9	OpenText has assumed the consulting services will be contracted on â€œTime and Material basis. 	Neutral
+10	OpenText and Customer may make changes in specifications and other information contained in this document if mutually agreed to.	Neutral
+1	Thank you for this opportunity and we appreciate your consideration of our OpenText Services Program proposal.	Positive
+2	Our proven solution will help you achieve the goals of this RFP.	Positive
+3	OpenText is committed to defining a an agreed upon plan representative of our level of effort for this project, managed by a rigorous change control process and ongoing oversight to deliver this project effectively on time within budget unless otherwise agreed upon.	Positive
+4	Customer has successfully implemented and used OpenText Content Suite for over two decades.	Positive
+5	OpenText is pleased to submit this quotation for professional services to support the upgrade of the software â€“ based on OpenText Content Server and a Kofax Capture.	Positive
+6	Consultant and OT agree that the following objectives should be met in order to successfully complete the Services.	Positive
+7	OT will commit to review and approval of weekly project reports within the 5 day window in order to ensure timely progression of work.	Positive
+8	OpenText is pleased to submit this Statement of Work to customer for consideration.  	Positive
+9	Open Text and customer agree to cooperate in good faith to complete the Services and Deliverables in a timely and professional manner.	Positive
+10	Our customers will be able to more quickly and efficiently deploy SharePoint sites with built-in OT functionality that reflects their business process.	Positive

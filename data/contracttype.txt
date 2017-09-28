@@ -1,0 +1,3 @@
+Contract Type	Contract Type Count
+Time and Material	394
+Fixed Fee	169

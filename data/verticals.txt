@@ -1,0 +1,13 @@
+Vertical	Vertical Count
+Internet & Publishing Industry	70
+Automobiles	60
+Energy	60
+Insurance	20
+Banking	12
+Furnishing Industry	10
+Health Care	10
+Industrial Transportation	10
+Travel Industry	10
+Pharmaceuticals	10
+Retail Industry	8
+Delivery Services	1

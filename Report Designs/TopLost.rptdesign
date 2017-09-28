@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201603302314</property>
+    <property name="units">in</property>
+    <property name="theme">ThemesReportItems31.Modern</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
+    </list-property>
+    <method name="onContentUpdate"><![CDATA[debugger;
+
+]]></method>
+    <data-sources>
+        <data-mart-data-source name="Data Source" id="8">
+            <property name="datamartURL">Data Objects/Contract Analysis</property>
+            <property name="accessType">transient</property>
+        </data-mart-data-source>
+    </data-sources>
+    <data-sets>
+        <data-mart-data-set name="Data Set" id="9">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">Keyword</property>
+                    <expression name="expression" type="javascript">BirtStr.toUpper(row["keyword"])</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Freq</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Freq</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">keyword</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">keyword</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">disposition</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">disposition</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Keyword</property>
+                    <property name="analysis">attribute</property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["disposition"]</expression>
+                    <simple-property-list name="value1">
+                        <value>"Lost"</value>
+                    </simple-property-list>
+                </structure>
+                <structure>
+                    <property name="operator">top-n</property>
+                    <expression name="expr" type="javascript">row["Freq"]</expression>
+                    <simple-property-list name="value1">
+                        <value>10</value>
+                    </simple-property-list>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Freq</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">keyword</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">disposition</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">Keyword</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <property name="dataObject">KeywordWinLoss</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Freq</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">keyword</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">disposition</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">auto</property>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <extended-item extensionName="HTMLControl" id="11">
+            <method name="clientOnCreate"><![CDATA[// This example demonstrates how to create a Word Cloud Chart
+// To render this visualization in Windows Internet Explorer use a version higher than 8
+
+/* ----------------------------------------------------------------------------------------- */
+/* This is the configuration object for creating the chart. You modify it to map your own data.
+ * See inline comments for more details.
+ */
+
+var config = {
+
+	/*
+	 * Provide the column binding names as shown below. If not all
+	 * column names are specified, the template will use the sample data instead.
+	 */
+
+	/* Specify the column name as it appears in the data set.
+	* Example: 
+	* wordColumn : "CUSTOMERNAME"
+	*/
+	/* the column name for the wordColumn in String format */
+	wordColumn : "Keyword",
+	
+	/* the total number of word to display */
+	wordCount : 10,
+	
+	wordFreq : "Freq"
+};
+
+/* --------------------------------------------------------------------------------------- */
+/*
+ * Below is the implementation code for the example. In most cases you do not need to
+ * modify it, unless you want to change the chart style, or behavior. 
+ * Changing the config object above is sufficient. 
+ */
+ 
+//Test if data mapping is configured, otherwise use sample data
+config.testMode = config.wordColumn == null
+		|| config.wordColumn == "<changeme>";
+
+
+var customViz = this;
+var containerId = this.getId();
+var containerWidth = $("#" + containerId).width();
+var containerHeight = $("#" + containerId).height();
+
+// If data binding is used, the data should be saved and transformed in order
+// to fit the Word Cloud Chart map.
+function dataTransfrom(cursor) {
+	var rows = [];
+	var count = 0;
+	while (cursor.hasNext()) {
+		if(config.wordCount != null &amp;&amp; count >= config.wordCount){
+			break;
+		}
+		var dataObj = cursor.next();
+		rows.push({"text":dataObj[config.wordColumn], "size":Math.min(0.5*parseInt(dataObj[config.wordFreq]),containerWidth/10,containerHeight/10)});
+		count++;
+	}
+	return rows;
+}
+
+var sampleData = [ "Hello", "world", "normally", "you", "want", "more",
+		"words", "than", "this" ];
+var colors = ["#9ecc4c", "#db462e", "#66b0d1", "#f4d760", "#c9112f", "#2e988c", "#f4ac45", "#3578ad","#f29682","#2c8e3c"];
+
+
+var data = config.testMode ? sampleData : dataTransfrom(this.getDataCursor());
+
+var callback = function() {
+	
+	var fill = d3.scale.linear()
+            .domain([1,2,3,4,5,6,10,15,20,50])
+            .range(colors);
+
+	d3.layout.cloud().size([ containerWidth, containerHeight ]).words(data).padding(5).rotate(function() {
+		return ~~(Math.random() * 2) * 90;
+	}).font("Arial").fontSize(function(d) {
+		return d.size;
+	}).on("end", draw).start();
+	customViz.setPrintReady();
+	function draw(words) {
+		d3.select("#" + containerId).append("svg")
+				.attr("width", containerWidth).attr("height", containerHeight).attr("class","wordcloud")
+				.append("g").attr(
+						"transform",
+						"translate(" + containerWidth / 2 + ","
+								+ containerHeight / 2 + ")").selectAll("text")
+				.data(words).enter().append("text").style("font-size",
+						function(d) {
+							return d.size + "px";
+						}).style("font-family", "Arial").style("font-size",function(d){
+							return d.size + "px";
+						}).style("fill",
+						function(d, i) {
+							return fill(i);
+						}).attr("text-anchor", "middle").attr(
+						"transform",
+						function(d) {
+							return "translate(" + [ d.x, d.y ] + ") rotate("
+									+ d.rotate + ")";
+						}).text(function(d) {
+					return d.text;
+				});
+	}
+}
+
+var downloadURL = 'js/d3-cloud-master/d3.layout.cloud.js';
+
+head.load('http://d3js.org/d3.v2.min.js', this.getBirtResourceURL(downloadURL),
+		callback);
+]]></method>
+            <property name="height">319px</property>
+            <property name="width">6.677083333333333in</property>
+            <expression name="bookmark" type="javascript">"keywordlost"</expression>
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Freq</property>
+                    <text-property name="displayName">Freq</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Freq"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">keyword</property>
+                    <text-property name="displayName">keyword</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["keyword"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Keyword</property>
+                    <text-property name="displayName">Keyword</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Keyword"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="displayName">Jason Davies Word Cloud using D3.js</property>
+        </extended-item>
+    </body>
+</report>

@@ -1,0 +1,26 @@
+Product	Product Count	Suite
+OTCS	282	Content
+Learnflex	150	Portfolio
+OTL	149	Portfolio
+OTIC	144	Portfolio
+OpenText ECM	106	Content
+OpenText CLM	67	Content
+OTCPS	60	Business Network
+OpenText eDOCS	32	Portfolio
+OpenText Enterprise Scan	25	Content
+OpenText Archive Server	22	Content
+OTAC	20	Portfolio
+OpenText Fax and Document Distribution	16	Business Network
+OpenText Web Site Management	15	Experience
+OCC	10	Business Network
+OpenText Metastorm Products	10	Process
+OTMM	10	Experience
+OTACE	6	Portfolio
+OTBI	5	Analytics
+OpenText Social Workplace	4	Portfolio
+OpenText Connectivity Solutions	3	Portfolio
+OpenText Content Viewing Solutions	3	Content
+OpenText Eloquent Media Server	3	Portfolio
+OTMP-AR	3	Portfolio
+OTCA	1	Portfolio
+OTIF	1	Portfolio

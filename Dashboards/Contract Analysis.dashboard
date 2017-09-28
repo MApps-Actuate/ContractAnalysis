@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201603302314</property>
+    <property name="layoutPreference">auto layout</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <data-mart-data-source name="NewDataMartDataSource" id="15">
+            <property name="datamartURL">Data Objects/Contract Analysis</property>
+            <property name="datamartVersion">-1</property>
+            <property name="accessType">transient</property>
+        </data-mart-data-source>
+    </data-sources>
+    <property name="linkedDataModels">
+        <data-mart-linked-data-model name="NewDataMartDataSource::Service Dates Data Model" id="16">
+            <property name="dataSource">NewDataMartDataSource</property>
+            <property name="dataObject">Service Dates Data Model</property>
+        </data-mart-linked-data-model>
+    </property>
+    <body>
+        <extended-item extensionName="Chart" name="Line Chart - Service Dates Data Model_4fd34906-884d-4954-8b58-acf38c1cf042" id="70">
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Line Chart" subType="Overlay" orientation="1">
+  <block>
+   <children _type="TitleBlock" visible="false" auto="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption value="">
+      <font size="12.0" bold="false" italic="false" underline="false"/>
+      <color _body=",255,51,51,51"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" visible="true" orientation="1" position="3">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title visible="true">
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body=",,608.25,178.5"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.range.selector" value="true"/>
+  <extendedProperties name="jschart.navigator" value="true"/>
+  <extendedProperties name="jschart.scroll" value="true"/>
+  <extendedProperties name="keep.hierarchy.category" value="true"/>
+  <extendedProperties name="keep.hierarchy.series" value="true"/>
+  <extendedProperties name="enable.data.summarize" value="false"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <extendedProperties name="jschart.series.shadow" value="false"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="QWER"/>
+   <orthogonalSampleData dataSetRepresentation="QWER" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <interactivity enable="true" legendBehavior="1"/>
+  <emptyMessage visible="true">
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes type="3" gapWidth="0.5" labelPosition="1" staggered="false" interval="1" categoryAxis="true">
+   <title visible="false">
+    <caption value="">
+     <font size="14.0" bold="false" italic="false" underline="false"/>
+     <color _body=",255,51,51,51"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes type="0" labelPosition="2" primaryAxis="true" percent="false">
+    <title visible="false">
+     <caption value="">
+      <font bold="false" italic="false" underline="false"/>
+      <color _body=",255,0,0,0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions sorting="0">
+     <query definition="row[&quot;Service&quot;]"/>
+     <series _type="LineSeries" seriesIdentifier="Service" stacked="false" paletteLineColor="true">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;Service&quot;]">
+       <grouping enabled="true" aggregateExpression="Count"/>
+      </dataDefinition>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="0"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label visible="true">
+     <caption>
+      <font size="10.0" bold="false" italic="false" underline="false" rotation="0.0"/>
+      <color _body=",255,51,51,51"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <scale step="0.0" stepNumber="1"/>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions sorting="0">
+    <query definition=""/>
+    <series seriesIdentifier="Date">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&quot;Date&quot;]"/>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping enabled="true" groupingUnit="7" groupType="1"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label visible="true">
+    <caption>
+     <font size="10.0" bold="false" italic="false" underline="false" rotation="0.0"/>
+     <color _body=",255,51,51,51"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <property name="height">178.5pt</property>
+            <property name="width">608.25pt</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Date</property>
+                    <expression name="expression">dataSetRow["Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">Service</property>
+                    <expression name="expression">dataSetRow["Service"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="theme">ThemesReportItems3.Modern</property>
+            <property name="linkedDataModel">NewDataMartDataSource::Service Dates Data Model</property>
+            <list-property name="userProperties">
+                <structure>
+                    <property name="name">copyHyperlink</property>
+                    <property name="type">string</property>
+                </structure>
+            </list-property>
+            <property name="copyHyperlink">true</property>
+        </extended-item>
+    </body>
+    <property name="dashboardView">
+        <dashboard id="2">
+            <property name="activeTab">180a3b33-87c3-4efd-af27-ac689d7b111c</property>
+            <property name="tabs">
+                <tab-element name="180a3b33-87c3-4efd-af27-ac689d7b111c" id="3">
+                    <property name="title">Contract Operations</property>
+                    <property name="backgroundColor">RGB(255,255,255)</property>
+                    <property name="freeFormGadgets">
+                        <gadget name="f7d977a8-310c-4541-8aae-8cccb96c6fa8" id="6">
+                            <property name="x">10px</property>
+                            <property name="y">11px</property>
+                            <property name="height">150px</property>
+                            <property name="width">907px</property>
+                            <property name="zIndex">2</property>
+                            <property name="isVisible">false</property>
+                            <property name="height">150px</property>
+                            <property name="width">907px</property>
+                            <property name="caption">
+                                <gadget-caption id="8">
+                                    <property name="showCaption">true</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"tahoma", "arial", "verdana", sans-serif</property>
+                                    <property name="fontSize">8pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="color">#000000</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <current-selections id="7"/>
+                            </property>
+                            <property name="subscribeTo">
+                                <event-subscriber>
+                                    <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
+                                    <property name="eventObjects">
+                                        <event-object>
+                                            <property name="gadget">Gadget_3b3b5673-8123-4110-b3b1-575d4973df1f</property>
+                                            <property name="dirty">false</property>
+                                        </event-object>
+                                    </property>
+                                </event-subscriber>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_31444b4e-173d-423b-9800-c7e5044a9a9f" id="9">
+                            <property name="x">0px</property>
+                            <property name="y">0px</property>
+                            <property name="height">418px</property>
+                            <property name="width">677px</property>
+                            <property name="title">Reportlet - Verticals - verticals</property>
+                            <property name="externalGadgetURI">^/Report Designs/Verticals.rptdocument</property>
+                            <property name="showTitle">true</property>
+                            <property name="showBorder">false</property>
+                            <property name="zIndex">3</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">418px</property>
+                            <property name="width">677px</property>
+                            <property name="caption">
+                                <gadget-caption id="10">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Lato"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="11">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/Verticals.rptdocument</property>
+                                            <property name="targetBookmark">verticals</property>
+                                        </external-element-ref>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_3b3b5673-8123-4110-b3b1-575d4973df1f" id="12">
+                            <property name="x">702px</property>
+                            <property name="y">13px</property>
+                            <property name="height">105px</property>
+                            <property name="width">827px</property>
+                            <property name="title">Services</property>
+                            <property name="showTitle">false</property>
+                            <property name="showBorder">false</property>
+                            <property name="zIndex">4</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">105px</property>
+                            <property name="width">827px</property>
+                            <property name="caption">
+                                <gadget-caption id="13">
+                                    <property name="showCaption">true</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Tahoma"</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <check-box-data-selector id="14">
+                                    <property name="linkedDataModel">NewDataMartDataSource::Service Dates Data Model</property>
+                                    <property name="sortDirection">asc</property>
+                                    <property name="operator">in</property>
+                                    <simple-property-list name="columnNames">
+                                        <value>Service</value>
+                                        <value>Service</value>
+                                    </simple-property-list>
+                                    <property name="orientation">horizontal</property>
+                                    <property name="autoAdjust">true</property>
+                                    <property name="autoAdjustNumber">3</property>
+                                    <property name="listLimit">1000</property>
+                                </check-box-data-selector>
+                            </property>
+                            <property name="observers">
+                                <event-subscriber>
+                                    <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
+                                    <property name="eventObjects">
+                                        <event-object>
+                                            <property name="gadget">f7d977a8-310c-4541-8aae-8cccb96c6fa8</property>
+                                            <property name="dirty">false</property>
+                                        </event-object>
+                                        <event-object>
+                                            <property name="gadget">Gadget_f9beee8b-686c-4202-bd83-d25833055da3</property>
+                                            <property name="dirty">false</property>
+                                        </event-object>
+                                    </property>
+                                </event-subscriber>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_f9beee8b-686c-4202-bd83-d25833055da3" id="68">
+                            <property name="x">696px</property>
+                            <property name="y">144px</property>
+                            <property name="height">273px</property>
+                            <property name="width">828px</property>
+                            <property name="title">Line Chart - Service Dates Data Model</property>
+                            <property name="showTitle">true</property>
+                            <property name="showBorder">false</property>
+                            <property name="zIndex">5</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">273px</property>
+                            <property name="width">828px</property>
+                            <property name="caption">
+                                <gadget-caption id="69">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Lato"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="71">
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="internalReportLetRef">Line Chart - Service Dates Data Model_4fd34906-884d-4954-8b58-acf38c1cf042</property>
+                                </data-view>
+                            </property>
+                            <property name="subscribeTo">
+                                <event-subscriber>
+                                    <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
+                                    <property name="eventObjects">
+                                        <event-object>
+                                            <property name="gadget">Gadget_3b3b5673-8123-4110-b3b1-575d4973df1f</property>
+                                            <property name="dirty">false</property>
+                                        </event-object>
+                                    </property>
+                                </event-subscriber>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_86994b4f-0b26-4a40-a4f9-e3f908288bce" id="75">
+                            <property name="x">695px</property>
+                            <property name="y">414px</property>
+                            <property name="height">437px</property>
+                            <property name="width">519px</property>
+                            <property name="title">Reportlet - Resources - resources</property>
+                            <property name="externalGadgetURI">^/Report Designs/Resources.rptdocument</property>
+                            <property name="showTitle">true</property>
+                            <property name="showBorder">false</property>
+                            <property name="zIndex">7</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">437px</property>
+                            <property name="width">519px</property>
+                            <property name="caption">
+                                <gadget-caption id="76">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Lato"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="77">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/Resources.rptdocument</property>
+                                            <property name="targetBookmark">resources</property>
+                                        </external-element-ref>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_53b9d3ac-2fce-4a3f-8f42-be4bb221e2e8" id="78">
+                            <property name="x">1206px</property>
+                            <property name="y">414px</property>
+                            <property name="height">435px</property>
+                            <property name="width">315px</property>
+                            <property name="title">Reportlet - EngagementTypes - engagements</property>
+                            <property name="externalGadgetURI">^/Report Designs/EngagementTypes.rptdocument</property>
+                            <property name="showTitle">true</property>
+                            <property name="showBorder">false</property>
+                            <property name="zIndex">1</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">435px</property>
+                            <property name="width">315px</property>
+                            <property name="caption">
+                                <gadget-caption id="79">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Lato"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="80">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/EngagementTypes.rptdocument</property>
+                                            <property name="targetBookmark">engagements</property>
+                                        </external-element-ref>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_cda0f71e-b454-4745-aa7f-39fab14f82b9" id="84">
+                            <property name="x">695px</property>
+                            <property name="y">866px</property>
+                            <property name="height">374px</property>
+                            <property name="width">825px</property>
+                            <property name="title">Reportlet - ProductSuite - products</property>
+                            <property name="externalGadgetURI">^/Report Designs/ProductSuite.rptdocument</property>
+                            <property name="showTitle">true</property>
+                            <property name="showBorder">false</property>
+                            <property name="zIndex">9</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">374px</property>
+                            <property name="width">825px</property>
+                            <property name="caption">
+                                <gadget-caption id="85">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Lato"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="86">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/ProductSuite.rptdocument</property>
+                                            <property name="targetBookmark">products</property>
+                                        </external-element-ref>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_eec0101a-071e-4906-bce0-f20cbd3ac97f" id="87">
+                            <property name="x">0px</property>
+                            <property name="y">864px</property>
+                            <property name="height">376px</property>
+                            <property name="width">675px</property>
+                            <property name="title">Reportlet - ServiceTypes - servicetype</property>
+                            <property name="externalGadgetURI">^/Report Designs/ServiceTypes.rptdocument</property>
+                            <property name="showTitle">true</property>
+                            <property name="showBorder">false</property>
+                            <property name="zIndex">10</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">376px</property>
+                            <property name="width">675px</property>
+                            <property name="caption">
+                                <gadget-caption id="88">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Lato"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="89">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/ServiceTypes.rptdocument</property>
+                                            <property name="targetBookmark">servicetype</property>
+                                        </external-element-ref>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_79f82c87-5234-4d03-bd5d-23dba2925dcb" id="111">
+                            <property name="x">0px</property>
+                            <property name="y">432px</property>
+                            <property name="height">383px</property>
+                            <property name="width">676px</property>
+                            <property name="title">Contracts by Country</property>
+                            <property name="externalGadgetURI">/Applications/ContractAnalysis/Report Designs/Contracts by Country.rptdesign</property>
+                            <property name="showTitle">false</property>
+                            <property name="showBorder">false</property>
+                            <property name="zIndex">11</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">383px</property>
+                            <property name="width">676px</property>
+                            <property name="caption">
+                                <gadget-caption id="112">
+                                    <property name="showCaption">true</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Tahoma"</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="color">#353535</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="113">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/Contracts by Country.rptdesign</property>
+                                        </external-element-ref>
+                                    </property>
+                                    <property name="paramSettings">
+                                        <param-setting>
+                                            <property name="paramName">pRegion</property>
+                                            <property name="displayText">World</property>
+                                            <expression name="value">World</expression>
+                                            <property name="isHidden">true</property>
+                                            <expression name="defaultValue" type="javascript">World</expression>
+                                        </param-setting>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                    </property>
+                </tab-element>
+                <tab-element name="82ba0621-5f0c-41cc-9adf-5ee109900fed" id="90">
+                    <property name="title">Contract Analysis</property>
+                    <property name="backgroundColor">RGB(255,255,255)</property>
+                    <property name="freeFormGadgets">
+                        <gadget name="Gadget_a0832cdd-f250-4b1a-bf33-af61888786a9" id="96">
+                            <property name="x">10px</property>
+                            <property name="y">11px</property>
+                            <property name="height">122px</property>
+                            <property name="width">554px</property>
+                            <property name="title">Reportlet - ContractTone - contracttone</property>
+                            <property name="externalGadgetURI">^/Report Designs/ContractTone.rptdocument</property>
+                            <property name="showTitle">true</property>
+                            <property name="showBorder">true</property>
+                            <property name="zIndex">2</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">122px</property>
+                            <property name="width">554px</property>
+                            <property name="caption">
+                                <gadget-caption id="97">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Lato"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="98">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/ContractTone.rptdocument</property>
+                                            <property name="targetBookmark">contracttone</property>
+                                        </external-element-ref>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_5e4116d4-90d4-496d-9d6e-4f32cd15732c" id="102">
+                            <property name="x">10px</property>
+                            <property name="y">158px</property>
+                            <property name="height">249px</property>
+                            <property name="width">554px</property>
+                            <property name="title">Reportlet - WinLossTone - tonewinloss</property>
+                            <property name="externalGadgetURI">^/Report Designs/WinLossTone.rptdocument</property>
+                            <property name="showTitle">true</property>
+                            <property name="showBorder">true</property>
+                            <property name="zIndex">4</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">249px</property>
+                            <property name="width">554px</property>
+                            <property name="caption">
+                                <gadget-caption id="103">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Lato"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="104">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/WinLossTone.rptdocument</property>
+                                            <property name="targetBookmark">tonewinloss</property>
+                                        </external-element-ref>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                        <gadget name="4090dae6-c32d-430f-ac39-6a12a2556175" id="93">
+                            <property name="x">10px</property>
+                            <property name="y">420px</property>
+                            <property name="height">150px</property>
+                            <property name="width">552px</property>
+                            <property name="zIndex">1</property>
+                            <property name="isVisible">false</property>
+                            <property name="height">150px</property>
+                            <property name="width">552px</property>
+                            <property name="caption">
+                                <gadget-caption id="95">
+                                    <property name="showCaption">true</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Lato"</property>
+                                    <property name="fontSize">24pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="color">#000000</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <current-selections id="94"/>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_6a81ee35-2539-447a-9c75-653fce11b2ca" id="105">
+                            <property name="x">11px</property>
+                            <property name="y">432px</property>
+                            <property name="height">334px</property>
+                            <property name="width">660px</property>
+                            <property name="title">Contract Win Keywords</property>
+                            <property name="externalGadgetURI">^/Report Designs/TopWins.rptdocument</property>
+                            <property name="showTitle">false</property>
+                            <property name="showBorder">true</property>
+                            <property name="zIndex">5</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">334px</property>
+                            <property name="width">660px</property>
+                            <property name="caption">
+                                <gadget-caption id="106">
+                                    <property name="showCaption">true</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Tahoma"</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="color">#000000</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="107">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/TopWins.rptdocument</property>
+                                            <property name="targetBookmark">keywordwon</property>
+                                        </external-element-ref>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_41fd0d5b-0c1d-4d35-a2f6-aaf991df20fb" id="99">
+                            <property name="x">585px</property>
+                            <property name="y">11px</property>
+                            <property name="height">398px</property>
+                            <property name="width">772px</property>
+                            <property name="title">Reportlet - ContractNames - popularnames</property>
+                            <property name="externalGadgetURI">^/Report Designs/ContractNames.rptdocument</property>
+                            <property name="showTitle">true</property>
+                            <property name="showBorder">true</property>
+                            <property name="zIndex">3</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">398px</property>
+                            <property name="width">772px</property>
+                            <property name="caption">
+                                <gadget-caption id="100">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Lato"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="101">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/ContractNames.rptdocument</property>
+                                            <property name="targetBookmark">popularnames</property>
+                                        </external-element-ref>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                        <gadget name="Gadget_bc6dddf9-e984-42a3-87f8-bdfdbb5809c9" id="108">
+                            <property name="x">692px</property>
+                            <property name="y">432px</property>
+                            <property name="height">334px</property>
+                            <property name="width">665px</property>
+                            <property name="title">Contract Lost Keywords</property>
+                            <property name="externalGadgetURI">^/Report Designs/TopLost.rptdocument</property>
+                            <property name="showTitle">false</property>
+                            <property name="showBorder">true</property>
+                            <property name="zIndex">6</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">334px</property>
+                            <property name="width">665px</property>
+                            <property name="caption">
+                                <gadget-caption id="109">
+                                    <property name="showCaption">true</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Tahoma"</property>
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="110">
+                                    <list-property name="userProperties">
+                                        <structure>
+                                            <property name="name">showViewerToolbar</property>
+                                            <property name="type">boolean</property>
+                                        </structure>
+                                    </list-property>
+                                    <property name="showViewerToolbar">false</property>
+                                    <property name="gadgetType">viewer</property>
+                                    <property name="externalContentRef">
+                                        <external-element-ref>
+                                            <property name="sourceFile">^/Report Designs/TopLost.rptdocument</property>
+                                            <property name="targetBookmark">keywordlost</property>
+                                        </external-element-ref>
+                                    </property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                    </property>
+                </tab-element>
+            </property>
+        </dashboard>
+    </property>
+</report>

@@ -1,0 +1,3 @@
+ToneWinLoss	Contract Count
+Negative Statements in Contracts Won	2
+Negative Statements in Contracts Lost	182

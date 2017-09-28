@@ -1,0 +1,15 @@
+Service Type	Service Type Count
+Documentation	600
+Product Configuration	499
+Installation	481
+Upgrade & Migration	363
+Training	343
+Architecture	340
+Project Management	264
+Product Audit	148
+Solution Design	93
+Taxonomy Project	87
+Research	86
+Enablement	41
+Consulting	39
+Product Retirement	9

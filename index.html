@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Contract Analytics</title>
+<LINK href="/iportal/common/jslib/themes/default/birt360.css" type="text/css" rel="stylesheet">
+<LINK href="/iportal/common/jslib/themes/default/yggdrasil.css" type="text/css" rel="stylesheet">
+<LINK rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+
+</head>
+
+ <body onload="acload()">
+
+		<div id="dashboardContainer" style="height:100%">
+			<script type="text/javascript" src="/iportal/jsapi"></script>
+			<script defer="defer" type="text/javascript" language="JavaScript">
+	                         
+        
+                                var dashboard;
+                                
+								function acload() {
+                                                actuate.load("dashboard");
+                                                var reqOps = new actuate.RequestOptions( );
+                                                reqOps.setRepositoryType(actuate.RequestOptions.REPOSITORY_ENCYCLOPEDIA);
+												reqOps.setVolume( "Default Volume" );
+                                                actuate.initialize("/iportal/",reqOps,null, null, afterInit );
+                                }
+ 
+                                function afterInit(){
+                                                var containerID = "dashboardContainer";
+                                                dashboard = new actuate.Dashboard(containerID);
+                                                dashboard.setIsDesigner(false);
+                                                dashboard.setDashboardName("/Applications/ContractAnalysis/Dashboards/Contract Analysis.dashboard");
+												
+                                                var docwidth = $(document).width();
+                                                var docheight = ($(document).height());
+                                                
+												dashboard.setWidth( docwidth );
+												dashboard.setHeight( docheight );
+												
+                                                dashboard.submit(
+                                                		function() {
+                                                		$(".actuate-tab-scroller-left-disabled").css("opacity","1");
+														
+														debugger;
+														$('button:contains("Hide")').trigger("click");
+                                                		});                                }
+                </script>
+
+	 
+	 </div>
+	</body>
+</html>

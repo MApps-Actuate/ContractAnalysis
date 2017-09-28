@@ -1,0 +1,28 @@
+Contract Country	Contract Count
+United States of America	360
+Canada	230
+France	130
+India	50
+United Kingdom	50
+Austria	50
+Germany	50
+Switzerland	40
+Poland	40
+Italy	40
+Ireland	40
+South Africa	30
+Australia	30
+Finland	30
+Japan	20
+Singapore	20
+Spain	20
+New Zealand	20
+United Arab Emirates	20
+Denmark	20
+Sweden	20
+Czech Republic	20
+Ukraine	10
+China	10
+Brazil	10
+Morocco	10
+Iceland	10

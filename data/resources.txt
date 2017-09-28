@@ -1,0 +1,10 @@
+Resource	Resource Count	Role
+Project Manager	625	Management
+Software Architect	269	Technical
+Technical Consultant	141	Technical
+Business Consultant	231	Functional
+Learning Services Consultant	143	Functional
+Computational Linguist	25	Functional
+Records Manager	66	Functional
+Solutions Consultant	129	Technical
+IT Specialist	346	Technical
