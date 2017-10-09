@@ -362,7 +362,7 @@ Click one to see its top 10 statements.</text-property>
                                         <property name="fontFamily">"FontAwesome"</property>
                                         <property name="fontSize">48pt</property>
                                         <property name="textAlign">center</property>
-                                        <text-property name="text"></text-property>
+                                        <text-property name="text"></text-property>
                                         <list-property name="action">
                                             <structure>
                                                 <property name="linkType">drill-through</property>
