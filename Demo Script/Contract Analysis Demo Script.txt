@@ -1,0 +1,37 @@
+I also drill on the negative icon to show what the top 10 negative statements.
+
+Mica
+
+From: Geff Vitale 
+Sent: Monday, October 09, 2017 11:51 AM
+To: Mark Gamble
+Cc: Daniel Melcher; Mica Block
+Subject: RE: Proposal Analysis demo
+
+General script based on how I show it.  
+
+[Show OTCA demo with any content relevant to the audience]
+[Point out how its extracting the different information from the text]
+[If possible, show a concept that has been standardized i.e. USA in the text, United States of America in the extracted list]
+Transition to Contract Operations with something like “that was looking at a single document, what could you do if many documents were processed and aggregated into a database?”
+
+[Show Contract Operations tab]
+            “This demo shows a compilation of approximately 1,500 statements of work for professional services that we put thru OTCA.”
+            “It was able to extract and standardize different elements of the contracts so we can visualize the information across all of them.”
+            “All of this information could be extracted from something like SFDC, IF the users were diligent about tagging the record.  But we know in practice very few actually do.  Or, what if you have a repository that didn’t have the option to put this information into the meta-data?”
+            “For Example, Verticals was represented in different way throughout the contracts but we were able to standardize it to the list we see on the screen.”
+            “We operationalized the information in those contracts so we can see across all of them instead of having to read individual documents and compile that information in something like a spreadsheet.”
+            “Seeing things like geography [ change to a different region in map ] or Services provided over time give us insight we did not have before, but we can also start to analyze this data.  [in Services choose Upgrade & Migration, then Training] Such as seeing that training engagements appear to follow Upgrades the following year.”
+            “We can also create hierarchies where they don’t exist, such as in Resource Count by Role where we have these 3 groups, but they don’t exist in the documents themselves.  Clicking on one lets us drill in to that hierarchy to see the relevant roles.  The same for Product Count by Suite, we rolled the products that were stated in the contracts into these Suites to better align with how we see our business units.”
+
+            
+[Show Contract Analysis tab]
+            “We took it a step further and looked at what was being said in the contracts to see not just frequency but also the tone of the statement.”
+            [Click the closed fist] “These are the top 10 Negative statements that occurred in all those documents.  Now we can look at how something is being said and compare it how often we win the business.” [close top 10 report and focus on the Negative Statements bar chart].
+            “We gained an insight that would have been impossible to see just shifting through files or meta-data, we found that of all the contracts we won, there were only 2 negative statements amongst them.  Compared to the 182 negative statements found in all the contracts we lost.  We are able to not just operationalize the attributes of a contract but now we can identify how to state things that may lead to a higher possibility of winning the business.”
+            [Focus on the word clouds] “When we take the top 10 keywords from the contracts we won and lost, we can see a lot of overlap between them, also giving us insight into where we may be missing key components of a contract when we don’t win.”
+
+[If leading with this demo before the Dryv demo, transition with something like ] “Let’s see what we can do if we were to continue on our path of analysis and wanted to incorporate advanced algorithms, such as machine learning, into our analysis.”
+
+Thanks,
+Geff Vitale
