@@ -86,7 +86,6 @@
   <extendedProperties name="enable.data.summarize" value="false"/>
   <extendedProperties name="jschart.zoom" value="xy"/>
   <extendedProperties name="jschart.series.shadow" value="false"/>
-  <extendedProperties name="jschart.client.script" value="beforeGeneration:function(o){if(o&amp;&amp;o.chart&amp;&amp;o.chart.renderTo){var r=document.getElementById(o.chart.renderTo);if(r.parentNode&amp;&amp;r.parentNode.id){var b=r.parentNode.id;var v=actuate.getViewer(b);if(v){v.enableGlobalFilter(o);}}}}"/>
   <sampleData>
    <baseSampleData dataSetRepresentation="QWER"/>
    <orthogonalSampleData dataSetRepresentation="QWER" seriesDefinitionIndex="0"/>
@@ -256,34 +255,15 @@
                     <property name="name">copyHyperlink</property>
                     <property name="type">string</property>
                 </structure>
-                <structure>
-                    <property name="name">createdBy</property>
-                    <property name="type">string</property>
-                </structure>
             </list-property>
             <property name="copyHyperlink">true</property>
-            <property name="createdBy">dashboard</property>
         </extended-item>
     </body>
     <property name="dashboardView">
         <dashboard id="2">
-            <list-property name="userProperties">
-                <structure>
-                    <property name="name">dashboardTheme</property>
-                    <property name="type">string</property>
-                </structure>
-            </list-property>
-            <property name="dashboardTheme">ThemesReportItems3.Classic:Light</property>
             <property name="activeTab">180a3b33-87c3-4efd-af27-ac689d7b111c</property>
             <property name="tabs">
                 <tab-element name="180a3b33-87c3-4efd-af27-ac689d7b111c" id="3">
-                    <list-property name="userProperties">
-                        <structure>
-                            <property name="name">tabTheme</property>
-                            <property name="type">string</property>
-                        </structure>
-                    </list-property>
-                    <property name="tabTheme">ThemesReportItems3.Classic:Light</property>
                     <property name="title">Contract Operations</property>
                     <property name="backgroundColor">RGB(255,255,255)</property>
                     <property name="freeFormGadgets">
@@ -363,7 +343,7 @@
                         </gadget>
                         <gadget name="Gadget_3b3b5673-8123-4110-b3b1-575d4973df1f" id="12">
                             <property name="x">702px</property>
-                            <property name="y">0px</property>
+                            <property name="y">13px</property>
                             <property name="title">Services</property>
                             <property name="showTitle">false</property>
                             <property name="showBorder">false</property>
@@ -415,8 +395,8 @@
                             </property>
                         </gadget>
                         <gadget name="Gadget_f9beee8b-686c-4202-bd83-d25833055da3" id="68">
-                            <property name="x">702px</property>
-                            <property name="y">162px</property>
+                            <property name="x">696px</property>
+                            <property name="y">144px</property>
                             <property name="title">Line Chart - Service Dates Data Model</property>
                             <property name="showTitle">true</property>
                             <property name="showBorder">false</property>
@@ -455,22 +435,15 @@
                             </property>
                         </gadget>
                         <gadget name="Gadget_86994b4f-0b26-4a40-a4f9-e3f908288bce" id="75">
-                            <list-property name="userProperties">
-                                <structure>
-                                    <property name="name">userPreferences</property>
-                                    <property name="type">string</property>
-                                </structure>
-                            </list-property>
-                            <property name="userPreferences">{"gadget-caption":{}}</property>
                             <property name="x">695px</property>
-                            <property name="y">484px</property>
+                            <property name="y">414px</property>
                             <property name="title">Reportlet - Resources - resources</property>
-                            <property name="externalGadgetURI">/Applications/ContractAnalysis/Report Designs/Resources.rptdocument</property>
+                            <property name="externalGadgetURI">^/Report Designs/Resources.rptdocument</property>
                             <property name="showTitle">true</property>
                             <property name="showBorder">false</property>
                             <property name="zIndex">7</property>
                             <property name="showScrollBar">false</property>
-                            <property name="height">410px</property>
+                            <property name="height">457px</property>
                             <property name="width">519px</property>
                             <property name="caption">
                                 <gadget-caption id="76">
@@ -504,22 +477,15 @@
                             </property>
                         </gadget>
                         <gadget name="Gadget_53b9d3ac-2fce-4a3f-8f42-be4bb221e2e8" id="78">
-                            <list-property name="userProperties">
-                                <structure>
-                                    <property name="name">userPreferences</property>
-                                    <property name="type">string</property>
-                                </structure>
-                            </list-property>
-                            <property name="userPreferences">{"gadget-caption":{}}</property>
                             <property name="x">1224px</property>
-                            <property name="y">480px</property>
+                            <property name="y">414px</property>
                             <property name="title">Reportlet - EngagementTypes - engagements</property>
-                            <property name="externalGadgetURI">/Applications/ContractAnalysis/Report Designs/EngagementTypes.rptdocument</property>
+                            <property name="externalGadgetURI">^/Report Designs/EngagementTypes.rptdocument</property>
                             <property name="showTitle">true</property>
                             <property name="showBorder">false</property>
                             <property name="zIndex">12</property>
                             <property name="showScrollBar">false</property>
-                            <property name="height">410px</property>
+                            <property name="height">451px</property>
                             <property name="width">321px</property>
                             <property name="caption">
                                 <gadget-caption id="79">
@@ -553,15 +519,15 @@
                             </property>
                         </gadget>
                         <gadget name="Gadget_cda0f71e-b454-4745-aa7f-39fab14f82b9" id="84">
-                            <property name="x">702px</property>
-                            <property name="y">936px</property>
+                            <property name="x">684px</property>
+                            <property name="y">882px</property>
                             <property name="title">Reportlet - ProductSuite - products</property>
                             <property name="externalGadgetURI">^/Report Designs/ProductSuite.rptdocument</property>
                             <property name="showTitle">true</property>
                             <property name="showBorder">false</property>
                             <property name="zIndex">9</property>
                             <property name="showScrollBar">false</property>
-                            <property name="height">379px</property>
+                            <property name="height">374px</property>
                             <property name="width">825px</property>
                             <property name="caption">
                                 <gadget-caption id="85">
@@ -596,15 +562,15 @@
                         </gadget>
                         <gadget name="Gadget_eec0101a-071e-4906-bce0-f20cbd3ac97f" id="87">
                             <property name="x">0px</property>
-                            <property name="y">936px</property>
+                            <property name="y">900px</property>
                             <property name="title">Reportlet - ServiceTypes - servicetype</property>
                             <property name="externalGadgetURI">^/Report Designs/ServiceTypes.rptdocument</property>
                             <property name="showTitle">true</property>
                             <property name="showBorder">false</property>
                             <property name="zIndex">10</property>
                             <property name="showScrollBar">false</property>
-                            <property name="height">380px</property>
-                            <property name="width">679px</property>
+                            <property name="height">376px</property>
+                            <property name="width">695px</property>
                             <property name="caption">
                                 <gadget-caption id="88">
                                     <property name="showCaption">false</property>
@@ -637,13 +603,6 @@
                             </property>
                         </gadget>
                         <gadget name="Gadget_79f82c87-5234-4d03-bd5d-23dba2925dcb" id="111">
-                            <list-property name="userProperties">
-                                <structure>
-                                    <property name="name">userPreferences</property>
-                                    <property name="type">string</property>
-                                </structure>
-                            </list-property>
-                            <property name="userPreferences">{"gadget-caption":{}}</property>
                             <property name="x">0px</property>
                             <property name="y">428px</property>
                             <property name="title">Contracts by Country</property>
@@ -652,7 +611,7 @@
                             <property name="showBorder">false</property>
                             <property name="zIndex">11</property>
                             <property name="showScrollBar">false</property>
-                            <property name="height">430px</property>
+                            <property name="height">411px</property>
                             <property name="width">676px</property>
                             <property name="caption">
                                 <gadget-caption id="112">
@@ -660,10 +619,7 @@
                                     <property name="horizontalAlignment">left</property>
                                     <property name="fontFamily">"Tahoma"</property>
                                     <property name="fontSize">12pt</property>
-                                    <property name="fontWeight">normal</property>
-                                    <property name="fontStyle">normal</property>
                                     <property name="color">#353535</property>
-                                    <property name="textUnderline">none</property>
                                 </gadget-caption>
                             </property>
                             <property name="content">
@@ -678,7 +634,7 @@
                                     <property name="gadgetType">viewer</property>
                                     <property name="externalContentRef">
                                         <external-element-ref>
-                                            <property name="sourceFile">/Applications/ContractAnalysis/Report Designs/Contracts by Country.rptdesign</property>
+                                            <property name="sourceFile">^/Report Designs/Contracts by Country.rptdesign</property>
                                         </external-element-ref>
                                     </property>
                                     <property name="paramSettings">
@@ -696,13 +652,6 @@
                     </property>
                 </tab-element>
                 <tab-element name="82ba0621-5f0c-41cc-9adf-5ee109900fed" id="90">
-                    <list-property name="userProperties">
-                        <structure>
-                            <property name="name">tabTheme</property>
-                            <property name="type">string</property>
-                        </structure>
-                    </list-property>
-                    <property name="tabTheme">ThemesReportItems3.Classic:Light</property>
                     <property name="title">Contract Analysis</property>
                     <property name="backgroundColor">RGB(255,255,255)</property>
                     <property name="freeFormGadgets">
